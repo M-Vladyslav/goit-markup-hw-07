@@ -27,9 +27,9 @@
           ><span class="Web-header">Web</span>Studio</a
         >
         <nav class="navigation">
-          <ul class="navigation-header list">
-            <li class="navigation-item">
-              <a href="./index.html" class="navigation-header-link link-decoration current"
+          <ul class="navigation__header list">
+            <li class="navigation__item">
+              <a href="./index.html" class="navigation__header-link link-decoration current"
                 >Студія</a
               >
             </li>
@@ -44,15 +44,15 @@
           </ul>
         </nav>
          <ul class="contact list">
-            <li class="navigation-item">
-              <a class="contact-mail link-decoration" href="mailto:info@devstudio.com">
-                <svg class="header-icon-letter" width="16px" height="12px">
+            <li class="contact__item">
+              <a class="contact__mail link-decoration" href="mailto:info@devstudio.com">
+                <svg class="contact__icon-letter" width="16px" height="12px">
                 <use href="./images/symbol-defs.svg#icon-letterhover"></use>
               </svg>info@devstudio.com</a>
             </li>
-            <li class="navigation-item">
-              <a class="contact-tel link-decoration" href="tel:+380961111111">
-                <svg class="header-icon-phone" width="12px" height="16px"> 
+            <li class="contact__item">
+              <a class="contact__tel link-decoration" href="tel:+380961111111">
+                <svg class="contact__icon-phone" width="12px" height="16px"> 
                 <use href="./images/symbol-defs.svg#icon-phone"></use></svg>+38 096 111 11 11</a>
             </li>
           </ul>
@@ -60,61 +60,61 @@
       </section>
     </header>
     <main>
-      <section class="title-slogan">
-        <div class="container">
-          <h1 class="slogan-name">Ефективні рішення для вашого бізнесу</h1>
-          <button data-modal-open class="button-order" type="button">Замовити послугу</button>
-         <div class="backdrop is-hidden" data-modal>
+      <section class="service-order">
+        <div class="banner container">
+          <h1 class="banner__slogan">Ефективні рішення для вашого бізнесу</h1>
+          <button data-modal-open class="banner__button-order" type="button">Замовити послугу</button>
+         <div class="shadow__backdrop--is-hidden" data-modal>
         <div class="modal">
-           <button data-modal-close class="close-modal">
-            <svg class="close" width="18px" height="18px">
+           <button data-modal-close class="modal__close-modal">
+            <svg class="modal__close" width="18px" height="18px">
                 <use href="./images/symbol-defsicon.svg#icon-closem"></use>
         </svg></button> 
         
-        <form class="modal-table">
-             <p class="modal-review">Залиште свої дані, ми вам передзвонимо</p>
-             <div class="form-div">
-            <label for="name" class="label-form">Ім'я
-            <div class="form-icon"> 
-            <input class="input-form" type="text" name="name" id="name" required >
-            <svg class="table-icon" width="18px" height="18px">
+        <form class="modal__table">
+             <p class="modal__review">Залиште свої дані, ми вам передзвонимо</p>
+             <div class="modal__form">
+            <label for="name" class="modal__label-form">Ім'я
+            <div class="modal__form-icon"> 
+            <input class="modal__input-form" type="text" name="name" id="name" required >
+            <svg class="modal__table-icon" width="18px" height="18px">
                 <use href="./images/symbol-deffs.svg#icon-name"></use>
             </svg>
         </div>
             </label>
             </div>
-            <div class="form-div">
-            <label  for="tel" class="label-form">Телефон
-                <div class="form-icon">
-            <input class="input-form" type="tel" name="tel" id="tel" required >
-            <svg class="table-icon" width="18px"  height="18px">
+            <div class="modal__form">
+            <label  for="tel" class="modal__label-form">Телефон
+                <div class="modal__form-icon">
+            <input class="modal__input-form" type="tel" name="tel" id="tel" required >
+            <svg class="modal__table-icon" width="18px"  height="18px">
                 <use href="./images/symbol-deffs.svg#icon-tel"></use>
             </svg>
         </div>
             </label>
             </div>
-            <div class="form-div">
-            <label for="mail" class="label-form">Пошта
-                <div class="form-icon">
-            <input  class="input-form" type="email" name="mail" id="mail" required>
-            <svg class="table-icon" width="18px" height="18px">
+            <div class="modal__form">
+            <label for="mail" class="modal__label-form">Пошта
+                <div class="modal__form-icon">
+            <input  class="modal__input-form" type="email" name="mail" id="mail" required>
+            <svg class="modal__table-icon" width="18px" height="18px">
                 <use href="./images/symbol-deffs.svg#icon-mail"></use>
             </svg>
         </div>
             </label>
             </div>
-            <div class="form-div form-comment">
-            <label  for="comment" class="label-form">Коментар</label>
+            <div class="modal__form form-comment">
+            <label  for="comment" class="modal__label-form">Коментар</label>
             <textarea class="input-comment" name="comment" id="comment" required cols="30" rows="10"  placeholder="Введіть текст"></textarea>
             </div>
-            <div class="form-checkbox">
-            <label  class="label-checkbox">
-            <input  type="checkbox" class="input-checkbox" name="" value="Погоджуюся з розсилкою та приймаю Умови договору">
+            <div class="modal__form-checkbox">
+            <label  class="modal__label-checkbox">
+            <input  type="checkbox" class="modal__input-checkbox" name="" value="Погоджуюся з розсилкою та приймаю Умови договору">
             <span class="icon-check">
             </span>
-            Погоджуюся з розсилкою та приймаю <a class="policy" href="">Умови договору </a></label>
+            Погоджуюся з розсилкою та приймаю <a class="modal__policy" href="">Умови договору </a></label>
         </div>
-            <button class="button-send" type="submit"  >Відправити</button>
+            <button class="modal__button-send" type="submit"  >Відправити</button>
         </form>
     
         </div>
