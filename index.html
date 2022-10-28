@@ -22,36 +22,34 @@
   <body>
 <section>
     <header class="title">
-      <div class="container main-link">
-        <a class="Studio-header link-decoration" href="index.html"
-          ><span class="Web-header">Web</span>Studio</a
-        >
+      <div class="logo">
+        <a class="logo__Studio-header" href="index.html">
+          <span class="logo__Web-header">Web</span>Studio</a>
         <nav class="navigation">
-          <ul class="navigation__header list">
+          <ul class="navigation__header">
             <li class="navigation__item">
-              <a href="./index.html" class="navigation__header-link link-decoration current"
-                >Студія</a
-              >
+              <a href="./index.html" class="navigation__header-link current"
+                >Студія</a>
             </li>
-            <li class="navigation-item">
-              <a href="./portfolio.html" class="navigation-header-link link-decoration"
+            <li class="navigation__item">
+              <a href="./portfolio.html" class="navigation__header-link"
                 >Портфоліо</a
               >
             </li>
-            <li class="navigation-item">
-              <a href="./index.html" class="navigation-header-link link-decoration">Контакти</a>
+            <li class="navigation__item">
+              <a href="./index.html" class="navigation__header-link">Контакти</a>
             </li>
           </ul>
         </nav>
-         <ul class="contact list">
+         <ul class="contact">
             <li class="contact__item">
-              <a class="contact__mail link-decoration" href="mailto:info@devstudio.com">
+              <a class="contact__mail" href="mailto:info@devstudio.com">
                 <svg class="contact__icon-letter" width="16px" height="12px">
                 <use href="./images/symbol-defs.svg#icon-letterhover"></use>
               </svg>info@devstudio.com</a>
             </li>
             <li class="contact__item">
-              <a class="contact__tel link-decoration" href="tel:+380961111111">
+              <a class="contact__tel" href="tel:+380961111111">
                 <svg class="contact__icon-phone" width="12px" height="16px"> 
                 <use href="./images/symbol-defs.svg#icon-phone"></use></svg>+38 096 111 11 11</a>
             </li>
@@ -64,7 +62,7 @@
         <div class="banner container">
           <h1 class="banner__slogan">Ефективні рішення для вашого бізнесу</h1>
           <button data-modal-open class="banner__button-order" type="button">Замовити послугу</button>
-         <div class="shadow__backdrop--is-hidden" data-modal>
+         <div class="backdrop--is-hidden" data-modal>
         <div class="modal">
            <button data-modal-close class="modal__close-modal">
             <svg class="modal__close" width="18px" height="18px">
@@ -103,14 +101,14 @@
         </div>
             </label>
             </div>
-            <div class="modal__form form-comment">
+            <div class="modal__form--form-comment">
             <label  for="comment" class="modal__label-form">Коментар</label>
-            <textarea class="input-comment" name="comment" id="comment" required cols="30" rows="10"  placeholder="Введіть текст"></textarea>
+            <textarea class="modal__input-comment" name="comment" id="comment" required cols="30" rows="10"  placeholder="Введіть текст"></textarea>
             </div>
             <div class="modal__form-checkbox">
             <label  class="modal__label-checkbox">
             <input  type="checkbox" class="modal__input-checkbox" name="" value="Погоджуюся з розсилкою та приймаю Умови договору">
-            <span class="icon-check">
+            <span class="modal__icon-check">
             </span>
             Погоджуюся з розсилкою та приймаю <a class="modal__policy" href="">Умови договору </a></label>
         </div>
