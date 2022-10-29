@@ -282,7 +282,7 @@ button {
   display: block;
 }
 
-.footer__contact-information, .staff__image-team-list, .job__image-list, .skills__list, .contact, .navigation__header {
+.btns__list, .footer__contact-information, .staff__image-team-list, .job__image-list, .skills__list, .contact, .navigation__header {
   list-style: none;
   padding-left: 0;
   margin: 0;
@@ -292,7 +292,7 @@ button {
   text-decoration: none;
 }
 
-.skills__hidden {
+.btns__hidden, .skills__hidden {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -306,7 +306,7 @@ button {
   overflow: hidden;
 }
 
-.footer, .customers, .staff, .skills, .banner, .logo {
+.btns, .footer, .customers, .staff, .skills, .banner, .logo {
   width: 1200px;
   margin: 0 auto;
   padding: 0 15px;
@@ -1270,4 +1270,45 @@ textarea {
   /* identical to box height */
   letter-spacing: 0.03em;
   color: #ffffff;
+}
+
+.btns__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 50px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-column-gap: 8px;
+     -moz-column-gap: 8px;
+          column-gap: 8px;
+}
+
+.btns__btn {
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  /* identical to box height, or 162% */
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #212121;
+  background-color: #f5f4fa;
+  padding: 6px 22px;
+  display: block;
+  border: none;
+  border-radius: 4px;
+  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.btns__btn:hover, .btns__btn:focus {
+  color: #ffffff;
+  background-color: #2196f3;
+  -webkit-box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+          box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+  cursor: pointer;
 }/*# sourceMappingURL=main.css.map */
