@@ -11,7 +11,9 @@
   height: 600px;
   margin: 0 auto;
 }
-
+.banner {
+  @extend %container;
+}
 .banner__slogan {
   font-weight: 900;
   font-size: 44px;
@@ -61,11 +63,16 @@
   opacity: 1;
   visibility: visible;
   transition: opacity $timing-function, visibility $timing-function;
+}
+.backdrop--is-hidden {
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+}
 
-  &--is-hidden {
-    opacity: 0;
-    pointer-events: none;
-    visibility: hidden;
+.backdrop--is-hidden {
+  & .modal {
+    transform: translate(-50%, -50%) scale(0);
   }
 }
 
@@ -79,10 +86,6 @@
   transition: transform $timing-function;
   background-color: $top-line-color;
   border-radius: 4px;
-
-  .backdrop--is-hidden & {
-    transform: translate(-50%, -50%) scale(0);
-  }
 }
 
 .modal__review {
@@ -124,10 +127,9 @@
   &:hover .modal__input-comment {
     border: 1px solid $blue-color;
   }
-
-  &--form-comment {
-    margin-bottom: 20px;
-  }
+}
+.modal__form--form-comment {
+  margin-bottom: 20px;
 }
 
 .modal__input-form {
@@ -227,7 +229,7 @@ textarea {
   clip: rect(0 0 0 0);
   overflow: hidden;
 
-  &:checked + .icon-check {
+  &:checked + .modal__icon-check {
     background-color: $blue-color;
     background-image: url(../images/iconcheck.svg);
     background-size: contain;

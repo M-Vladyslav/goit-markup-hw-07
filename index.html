@@ -28,7 +28,7 @@
         <nav class="navigation">
           <ul class="navigation__header">
             <li class="navigation__item">
-              <a href="./index.html" class="navigation__header-link current"
+              <a href="./index.html" class="navigation__header-link navigation__header-link--current"
                 >Студія</a>
             </li>
             <li class="navigation__item">
@@ -59,10 +59,10 @@
     </header>
     <main>
       <section class="service-order">
-        <div class="banner container">
+        <div class="banner">
           <h1 class="banner__slogan">Ефективні рішення для вашого бізнесу</h1>
           <button data-modal-open class="banner__button-order" type="button">Замовити послугу</button>
-         <div class="backdrop--is-hidden" data-modal>
+         <div class="backdrop backdrop--is-hidden" data-modal>
         <div class="modal">
            <button data-modal-close class="modal__close-modal">
             <svg class="modal__close" width="18px" height="18px">
@@ -101,7 +101,7 @@
         </div>
             </label>
             </div>
-            <div class="modal__form--form-comment">
+            <div class="modal__form modal__form--form-comment">
             <label  for="comment" class="modal__label-form">Коментар</label>
             <textarea class="modal__input-comment" name="comment" id="comment" required cols="30" rows="10"  placeholder="Введіть текст"></textarea>
             </div>
@@ -335,48 +335,48 @@
           </ul>
         </div>
         </section>
-        <section class="section">
-        <div class="container">
-          <h2 class="regular-customers">Постійні клієнти</h2>
-          <ul class="clients">
-            <li class="icon-clients">
-              <a href="#" class="icon-ref link-decoration">
-             <svg class="icon-client" width="106px" height="60px">
+        <section class="clients">
+        <div class="customers">
+          <h2 class="customers__title">Постійні клієнти</h2>
+          <ul class="customers__list">
+            <li class="customers__items">
+              <a href="#" class="customers__icon-ref">
+             <svg class="customers__icons" width="106px" height="60px">
               <use href="./images/symbol-defs.svg#icon-yaco"></use>
              </svg>
              </a>
             </li>
-            <li class="icon-clients">
-              <a href="#" class="icon-ref link-decoration">
-             <svg class="icon-client" width="106px" height="60px">
+            <li class="customers__items">
+              <a href="#" class="customers__icon-ref">
+             <svg class="customers__icons" width="106px" height="60px">
               <use href="./images/symbol-defs.svg#icon-companytaglinehere"></use>
              </svg>
              </a>
             </li>
-            <li class="icon-clients">
-             <a href="#" class="icon-ref link-decoration">
-              <svg class="icon-client" width="106px" height="60px">
+            <li class="customers__items">
+             <a href="#" class="customers__icon-ref">
+              <svg class="customers__icons" width="106px" height="60px">
               <use href="./images/symbol-defs.svg#icon-company"></use>
              </svg>
              </a>
             </li>
-            <li class="icon-clients">
-              <a href="#" class="icon-ref link-decoration">
-             <svg class="icon-client" width="106px" height="60px">
+            <li class="customers__items">
+              <a href="#" class="customers__icon-ref">
+             <svg class="customers__icons" width="106px" height="60px">
               <use href="./images/symbol-defs.svg#icon-fosterpeters"></use>
              </svg>
              </a>
             </li>
-            <li class="icon-clients">
-              <a href="#" class="icon-ref link-decoration">
-             <svg class="icon-client" width="106px" height="60px">
+            <li class="customers__items">
+              <a href="#" class="customers__icon-ref">
+             <svg class="customers__icons" width="106px" height="60px">
               <use href="./images/symbol-defs.svg#icon-brand"></use>
              </svg>
              </a>
             </li>
-            <li class="icon-clients">
-              <a href="#" class="icon-ref link-decoration">
-             <svg class="icon-client" width="106px" height="60px">
+            <li class="customers__items">
+              <a href="#" class="customers__icon-ref">
+             <svg class="customers__icons" width="106px" height="60px">
               <use href="./images/symbol-defs.svg#icon-companytagline"></use>
              </svg>
              </a>
@@ -386,57 +386,57 @@
       </section>
     </main>
     <footer class="site-footer">
-      <div class="container footer">
-      <div class="footer-web">
-        <a class="Studio link-decoration" href="index.html"
-          ><span class="Web link-decoration">Web</span>Studio</a>
-        <address class="address">
-          <ul class="contact-information list">
-            <li class="address-link">
+      <div class="footer">
+      <div class="footer__web">
+        <a class="footer__Studio" href="index.html"
+          ><span class="footer__Web">Web</span>Studio</a>
+        <address class="footer__address">
+          <ul class="footer__contact-information">
+            <li class="footer__address-link">
               <a
-                class="google-map link-decoration"
+                class="footer__google-map"
                 href="https://goo.gl/maps/xMRnPwp1A4SYm6yV7"
                 target="_blank"
                 rel="noreferrer noopener">
                 м. Київ, пр-т Лесі Українки, 26</a>
             </li>
-            <li class="address-link">
-              <a class="contact-email link-decoration" href="mailto:info@devstudio.com"
+            <li class="footer__address-link">
+              <a class="footer__contact-email" href="mailto:info@devstudio.com"
                 >info@devstudio.com</a>
             </li>
-            <li class="address-link">
-              <a class="contact-phone link-decoration" href="tel:+380961111111"
+            <li class="footer__address-link">
+              <a class="footer__contact-phone link-decoration" href="tel:+380961111111"
                 >+38 096 111 11 11</a>
             </li>
           </ul>
       </div>
-      <div class="footer-social-network">
-        <h2 class="footer-social-network-title">Приєднуйтесь</h2>
-        <ul class="footer-social-list">
-        <li class="footer-social-item">
-        <a  href="" class="footer-social-link" >
-      <svg class="footer-social-icon" width="20px" height="20px">
+      <div class="footer__social-network">
+        <h2 class="footer__social-network-title">Приєднуйтесь</h2>
+        <ul class="footer__social-list">
+        <li class="footer__social-item">
+        <a  href="" class="footer__social-link" >
+      <svg class="footer__social-icon" width="20px" height="20px">
         <use href="./images/symbol-defs.svg#icon-instagram"></use>
       </svg>
         </a>
         </li>
-        <li class="footer-social-item">
-        <a href="#" class="footer-social-link" >
-      <svg class="footer-social-icon" width="20px" height="20px">
+        <li class="footer__social-item">
+        <a href="#" class="footer__social-link" >
+      <svg class="footer__social-icon" width="20px" height="20px">
         <use href="./images/symbol-defs.svg#icon-twitter"></use>
       </svg>
         </a>
         </li>
-        <li class="footer-social-item">
-        <a href="#" class="footer-social-link" >
-      <svg class="footer-social-icon" width="20px" height="20px">
+        <li class="footer__social-item">
+        <a href="#" class="footer__social-link" >
+      <svg class="footer__social-icon" width="20px" height="20px">
         <use href="./images/symbol-defs.svg#icon-facebook"></use>
       </svg>
         </a>
         </li>
-        <li class="footer-social-item">
-        <a href="#" class="footer-social-link" >
-      <svg class="footer-social-icon" width="20px" height="20px">
+        <li class="footer__social-item">
+        <a href="#" class="footer__social-link" >
+      <svg class="footer__social-icon" width="20px" height="20px">
         <use href="./images/symbol-defs.svg#icon-linkedin"></use>
       </svg>
         </a>
@@ -444,13 +444,13 @@
         </ul>
       </h2>
       </div>
-      <div class="footer-news-letter">
-        <h2 class="footer-news-title">Підпишіться на розсилку</h2>
-        <form class="footer-mail">
+      <div class="footer__news-letter">
+        <h2 class="footer__news-title">Підпишіться на розсилку</h2>
+        <form class="footer__mail">
             <label  for="e-mail"></label>
-            <input class="text-email" type="mail" name="e-mail" id="e-mail" required  placeholder="E-mail">
-            <button class="button-sign" type="submit"><span class="text-sign">Підписатися</span> 
-                <svg class="footer-icon" width="24" height="24">
+            <input class="footer__text-email" type="mail" name="e-mail" id="e-mail" required  placeholder="E-mail">
+            <button class="footer__button-sign" type="submit"><span class="footer__text-sign">Підписатися</span> 
+                <svg class="footer__icon" width="24" height="24">
                     <use href="./images/symbol-deffs.svg#icon-send"></use>
                 </svg>
             </button>
