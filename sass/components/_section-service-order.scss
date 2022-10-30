@@ -64,13 +64,13 @@
   visibility: visible;
   transition: opacity $timing-function, visibility $timing-function;
 }
-.backdrop--is-hidden {
+.is-hidden {
   opacity: 0;
   pointer-events: none;
   visibility: hidden;
 }
 
-.backdrop--is-hidden {
+.backdrop-is--hidden {
   & .modal {
     transform: translate(-50%, -50%) scale(0);
   }
